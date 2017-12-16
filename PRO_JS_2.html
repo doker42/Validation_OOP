@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>My Registrations FORM</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<h1>Registration Form</h1>
+<div class="regform">
+
+    <form method="POST" action="" onsubmit="return Validate()" name="vform">
+    
+        <!--USER NAME-->
+        <div>
+            <input id="username" type="text" name="username" class="textInput" placeholder="UserName" />
+            <div id="name error" class="val_error"></div>
+        </div>
+
+        <!--EMAIL-->
+        <div>
+            <!-- <input id="email" type="text" name="email" class="textInput" placeholder="Email"/> -->
+            <input id="email" type="text" name="email" class="textInput" placeholder="Email"/>
+            <div id="email error" class="val_error"></div>
+        </div>
+        
+
+        <!--SUBMIT-->
+        <div>
+            <input id="register" type="submit" value="Register" class="btn" name="register"/>
+        </div>
+    </form>
+    <div id="result" class="val_error"></div>
+</div>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
